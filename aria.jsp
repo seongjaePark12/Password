@@ -18,7 +18,7 @@
     	
     	$.ajax({
     		type : "post",
-    		url  : "${ctp}/study/password3/aria",
+    		url  : "${ctp}/password/password3/aria",
     		data : {pwd : pwd},
     		success:function(res) {
     			i++;
