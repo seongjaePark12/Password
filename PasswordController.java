@@ -42,7 +42,7 @@ public class PasswordController {
 		model.addAttribute("encPwd", encPwd);
 		model.addAttribute("decPwd", decPwd);
 		
-		return "password/passCheck1";
+		return "../passCheck1";
 	}
 	
 	@RequestMapping(value = "/password/passCheck2", method = RequestMethod.POST)
@@ -84,12 +84,12 @@ public class PasswordController {
 		}
 		model.addAttribute("decPwd", result);
 		model.addAttribute("pwd", pwd);
-		return "study/password/passCheck1";
+		return "../passCheck1";
 	}
   	// aria 암호화 방식연습
 	@RequestMapping(value = "/password3/aria", method = RequestMethod.GET)
 	public String ariaGet() {
-		return "study/password3/aria";
+		return "../aria";
 	}
 	
 	@ResponseBody
@@ -115,7 +115,7 @@ public class PasswordController {
   // BCryptPasswordEncoder 암호화 방식연습
 	@RequestMapping(value = "/password3/securityCheck", method = RequestMethod.GET)
 	public String securityCheckGet() {
-		return "password3/security";
+		return "../security";
 	}
 	
 	@ResponseBody
