@@ -16,8 +16,8 @@
 	  		document.getElementById("pwd").focus();
 	  	}
 	  	else {
-	  		if(flag == 1) myForm.action = "${ctp}/study/password/passCheck1";
-	  		else myForm.action = "${ctp}/study/password/passCheck2";
+	  		if(flag == 1) myForm.action = "${ctp}/password/password/passCheck1";
+	  		else myForm.action = "${ctp}/password/password/passCheck2";
 	  		myForm.submit();
 	  	}
     }
