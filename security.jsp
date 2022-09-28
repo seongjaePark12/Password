@@ -17,7 +17,7 @@
     	
     	$.ajax({
     		type : "post",
-    		url  : "${ctp}/study/password3/securityCheck",
+    		url  : "${ctp}/password/password3/securityCheck",
     		data : {pwd : pwd},
     		success:function(res) {
     			i++;
